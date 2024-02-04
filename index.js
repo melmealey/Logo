@@ -1,55 +1,50 @@
  // Runs the application using imports from lib/
-
+//importing the inquirer library
 const inquirer = require('inquirer');
+//importing the file system
+const fs = require('fs');
 
-const prompt = async () => {
+const prompts = async () => {
   try {
     const input = await inquirer.prompt({
+      { 
+        type: 'list',
+        name: 'shape',
+        message: 'Choose the shape you would like for your logo:',
+        choices: ['Circle', 'Square', 'Triangle'],
+      },
+      {
       type: 'input',
-      name: 'username',
-      message: 'Enter a Github Username:'
-    })
+      name: 'text',
+      message: 'TEXT: Enter up to 3 Characters:',
+      },
+      {
+        type: 'input',
+        name: 'text-coor',
+        message: 'TEXT COLOR: Enter a color:',
+      },
+      {
+        type: 'input',
+        name: 'shape',
+        message: 'SHAPE COLOR: : Enter a color:',
+       },
+      })
+
+        }}      
+ 
+
 
     const response = await fetch(`https://api.github.com/users/${input.username}`)
     const json = await response.json()
 
     console.log(json)
-  } catch (err) {
+   catch (err) {
     console.log(err)
   }
-}
 
-prompt()
 
-module.exports = SVG 
+prompts()
 
-// const inquirer = require('inquirer');
-// const fs = require('fs');
+module.exports = Shapes
 
-// inquirer
-//   .prompt([
-//     {
-//       type: 'input',
-//       name: 'name',
-//       message: 'What is your name?',
-//     },
-//     {
-//       type: 'checkbox',
-//       message: 'What languages do you know?',
-//       name: 'stack',
-//       choices: ['HTML', 'CSS', 'JavaScript', 'MySQL'],
-//     },
-//     {
-//       type: 'list',
-//       message: 'What is your preferred method of communication?',
-//       name: 'contact',
-//       choices: ['email', 'phone', 'telekinesis'],
-//     },
-//   ])
-//   .then((data) => {
-//     const filename = `${data.name.toLowerCase().split(' ').join('')}.json`;
 
-//     fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-//       err ? console.log(err) : console.log('Success!')
-//     );
-//   });
