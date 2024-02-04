@@ -1,0 +1,18 @@
+{
+  "name": "svg-logo-hw",
+  "version": "1.0.0",
+  "description": "## Description Make a simple logo",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}

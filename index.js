@@ -6,8 +6,8 @@ const fs = require('fs');
 
 const prompts = async () => {
   try {
-    const input = await inquirer.prompt({
-      { 
+    const input = await inquirer.prompt ({
+    
         type: 'list',
         name: 'shape',
         message: 'Choose the shape you would like for your logo:',
@@ -20,7 +20,7 @@ const prompts = async () => {
       },
       {
         type: 'input',
-        name: 'text-coor',
+        name: 'text-color',
         message: 'TEXT COLOR: Enter a color:',
       },
       {
@@ -28,9 +28,9 @@ const prompts = async () => {
         name: 'shape',
         message: 'SHAPE COLOR: : Enter a color:',
        },
-      })
+      }
 
-        }}      
+    }
  
 
 
