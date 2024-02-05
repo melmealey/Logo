@@ -31,6 +31,7 @@ inquirer.prompt ([
     ])
   
  .then(response => {
+console.log(response)
 
     if (response.shape === 'circle') {
       const circle = new Circle()
@@ -56,17 +57,14 @@ inquirer.prompt ([
   })
 
 
-const response = await fetch(`https://api.github.com/users/${input.username}`)
-const json = await response.json()
-
-console.log(json)
+// console.log()
 //    catch (err) {
 //   console.log(err)
 // }
 
 
-prompts()
+// prompts()
 
-module.exports = Shapes
+// module.exports = Shapes
 
 
