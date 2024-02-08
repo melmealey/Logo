@@ -10,7 +10,7 @@
 
 ## Description
 
-The application generates a simple logo ("circle.svg", "square.svg", and "triangel.svg") saved to the Assets forlder, using the inputs the user gives with each prompt. The logo is saved an SVG image.
+The application generates a simple logo using the inputs the user gives with each prompt. The logo is saved as an SVG image.
 ScreenCastify is used to make a walkthrough screenshare showing how the code works and renders logos.
 
 ## Intallation
@@ -20,16 +20,35 @@ You will need to install Inquirer.js
 
 
 ## Usage
-You can create a simple logo choosing the background color, and shape as well as including up to 3 characters and choosing their color as well. You may use this when creating a logo for your company so that you don't have to hire a graphic designer.
+You can create a simple logo choosing between 3 different shapes, the color of the shape, as well as including up to 3 characters and choosing their color as well. You may use this when creating a simple logo for your company so that you don't have to hire a graphic designer.
 
 ## Credits
-My tutor helped me get started on this. I also attended office hours and asked questions where my instructor and classmates were both helpful. I used the XPERT Learning assistant tool given us as well. 
+My tutor helped me get started on this. 
+I also attended office hours and asked questions where my instructor and classmates were both helpful. 
+I used the XPERT Learning assistant tool given us as well as Ask BCS. 
+
+These were all helpful websites too:
+
+* [Example SVG](https://static.fullstack-bootcamp.com/fullstack-ground/module-10/circle.svg)
+
+* [Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
+
+* [SVG tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
+
+* [Basic SVG shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)
+
+* [Text in SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts)
+
+* [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
+
+* [Node.js] https://nodejs.org/api/synopsis.html
+
 
 ## License
 Please refer to the LICENSE in the repo.
 
 
-Link to video:
+Link to video (using ScreenCastify) 
 
 Repo:
 https://github.com/melmealey/Logo
