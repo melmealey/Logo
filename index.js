@@ -58,4 +58,21 @@ console.log(response)
   }
 });
 
+function generateLogo(text, shapeColor, shape, textColor) {
+  // Create the SVG content
+  const svgContent = `<svg width="300" height="200">
+    <rect width="300" height="200" fill="${shapeColor}" />
+    <text x="50%" y="50%" text-anchor="middle" fill="${textColor}" font-size="48">${text}</text>
+  </svg>`;
 
+  // Write the SVG content to a file
+  fs.writeFile('logo.svg', svgContent, (err) => {
+    if (err) {
+      console.error('Error generating logo:', err);
+    } else {
+      console.log('Generated logo.svg');
+    }
+  });
+}
+
+generateLogo (text, shapeColor, shape, textColor);
