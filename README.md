@@ -53,7 +53,7 @@ Please refer to the LICENSE in the repo.
 
 
 Link to video (using ScreenCastify) 
-https://drive.google.com/file/d/1SVfSXdsNlJgICU3qgYBPx0f3keeeDOp-/view
+https://drive.google.com/file/d/18eAiEd1QK_xddvrXsrpis08fFnt1LbP6/view
 
 Repo:
 https://github.com/melmealey/Logo
